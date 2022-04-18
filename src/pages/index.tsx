@@ -79,6 +79,30 @@ export default function Home() {
             role: "Game Programming",
             href: "",
         },
+        {
+            image: "/porto/404.png",
+            titlegame: "Ngebook",
+            developename: "Interactive Media",
+            tlproject: "Start",
+            tleproject: "End",
+            roleproject: "Role",
+            green: "Q3 2019",
+            red: "Q4 2019",
+            role: "Programming",
+            href: "",
+        },
+        {
+            image: "/porto/404.png",
+            titlegame: "-",
+            developename: "Game Development",
+            tlproject: "Start",
+            tleproject: "End",
+            roleproject: "Role",
+            green: "On Going",
+            red: "On Going",
+            role: "Game Programming",
+            href: "",
+        },
     ];
 
     return (
@@ -88,7 +112,7 @@ export default function Home() {
                     <nav className="flex justify-between px-6 lg:px-12 py-4">
                         <div className="flex w-full justify-between grid-cols-2">
                             <a href="#">
-                                <img className="h-12" src="images/he.png" alt="" />
+                                <img className="h-12" src="/he.png" alt="" />
                             </a>
                             <div className="flex items-center ml-auto">
                                 <ul className="hidden px-4 xl:flex">
@@ -120,7 +144,7 @@ export default function Home() {
                         <nav className="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
                             <div className="flex items-center pl-16 mb-8">
                                 <a className="text-2xl text-gray-800 font-bold" href="#">
-                                    <img className="h-12" src="images/he_blck.png" alt="" />
+                                    <img className="h-12" src="he_blck.png" alt="" />
                                 </a>
                             </div>
                             <div className="flex items-center mb-10 px-10">
@@ -272,8 +296,8 @@ export default function Home() {
                         <div className="relative lg:pb-8 mb-8 flex flex-wrap lg:border-b lg:border-gray-300">
                             <p className="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first inline-block">© 2022. All rights reserved.</p>
                             <div className="mb-6 lg:mb-0 lg:ml-auto w-full lg:w-auto order-first lg:order-last text-center lg:text-center">
-                                <a className="inline-block text-xl font-bold leading-none" href="#">
-                                    <img className="inline-block lg-6 lg:h-12" src="/he_blck.png" alt="" width="auto" />
+                                <a href="#">
+                                    <img className="inline-block lg:h-10 md:h-6 sm:h-6 " src="/he_blck.png" alt="" width="auto" />
                                 </a>
                             </div>
                         </div>
