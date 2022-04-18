@@ -20,12 +20,12 @@ export default function Home() {
     ];
     const footer = [
         {
-            logo: "/github.png",
-            href: "#",
+            logo: "/social/github.png",
+            href: "/",
         },
         {
-            logo: "/lid.png",
-            href: "#",
+            logo: "/social/lid.png",
+            href: "/",
         },
     ];
     return (
@@ -127,11 +127,6 @@ export default function Home() {
                         <h2 className="mt-8 mb-24 font-heading font-medium text-xl md:text-4xl xl:text-7xl">Here you can recognize me</h2>
                     </div>
                     <div className="flex flex-wrap items-center justify-center -mx-4 mb-16 md:mb-28">
-                        <div className="w-auto px-4 mb-4 xl:mb-0 text-center order-last sm:order-first">
-                            <a className="inline-block" href="#">
-                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
-                            </a>
-                        </div>
                         <div className="w-full sm:w-2/3 max-w-4xl px-4 mx-auto mb-16 sm:mb-0 ">
                             <div className="relative mb-5 px-8 md:px-20 bg-white rounded-xl shadow-lg py-14">
                                 <img className="absolute top-0 right-0 mr-12 transform -translate-y-1/2" src="/quote-2.svg" alt="" />
@@ -274,20 +269,21 @@ export default function Home() {
                 <div className="container mx-auto px-4">
                     <div className="pt-10 pb-12">
                         <div className="relative lg:pb-8 mb-8 flex flex-wrap lg:border-b lg:border-gray-300">
-                            <p className="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first">© 2021. All rights reserved.</p>
+                            <p className="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first">© 2022. All rights reserved.</p>
                             <div className="mb-12 lg:mb-0 lg:ml-auto w-full lg:w-auto order-first lg:order-last text-center lg:text-left">
                                 <a className="inline-block text-xl font-bold leading-none" href="#">
-                                    <img className="inline-block h-12 lg:h-6" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto" />
+                                    <img className="inline-block h-12 lg:h-6" src="/he_blck.png" alt="" width="auto" />
                                 </a>
                             </div>
                         </div>
                         <div className="flex justify-center">
-                            <div className="">
+                            <div className="grid grid-cols-2">
                                 {footer.map((item, index) => {
                                     return (
                                         <div key={index}>
-                                            <a className="inline-block w-10 mr-2 p-2 rounded"></a>
-                                            <img src={item.logo} alt="" className="mx-auto hover:bg-opacity-50" />
+                                            <a className="inline-block w-10 mr-2 p-2 rounded" href={item.href}>
+                                                <img src={item.logo} alt="" className="mx-auto hover:bg-opacity-50" />
+                                            </a>
                                         </div>
                                     );
                                 })}
