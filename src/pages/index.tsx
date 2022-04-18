@@ -18,6 +18,7 @@ export default function Home() {
             href: "#",
         },
     ];
+
     const footer = [
         {
             logo: "/social/github.png",
@@ -28,6 +29,46 @@ export default function Home() {
             href: "/",
         },
     ];
+
+    const portofolio = [
+        {
+            image: "/porto/tatj.png",
+            titlegame: "The Assasins: The Journey",
+            developename: "Game Development",
+            tlproject: "Start",
+            tleproject: "End",
+            roleproject: "Role",
+            green: "Q1 2021",
+            red: "Q2 2021",
+            role: "Game Programming",
+            href: "",
+        },
+        {
+            image: "/porto/inesh.png",
+            titlegame: "Inertia Showdown",
+            developename: "Game Development",
+            tlproject: "Start",
+            tleproject: "End",
+            roleproject: "Role",
+            green: "25 Nov 2021",
+            red: "10 Jan 2022",
+            role: "Game Programming",
+            href: "",
+        },
+        {
+            image: "/porto/alm.png",
+            titlegame: "A La Mode - Nusantara",
+            developename: "Game Development",
+            tlproject: "Start",
+            tleproject: "End",
+            roleproject: "Role",
+            green: "25 Mar 2022",
+            red: "On Going",
+            role: "Game Programming",
+            href: "",
+        },
+    ];
+
     return (
         <>
             <div>
@@ -105,6 +146,7 @@ export default function Home() {
                         </button>
                     </div>
                 </section>
+
                 {/* Profile */}
                 <section>
                     <div className="bg-gray-100">
@@ -149,12 +191,14 @@ export default function Home() {
                                 <div className="w-full lg:w-1/2 px-4 lg:flex-grow" data-aos="fade-left" data-aos-duration="1000">
                                     <div className="h-full pl-12 pr-4 bg-white rounded-xl shadow-lg py-12">
                                         <div className="flex items-center">
-                                            <div className="mr-4">
-                                                <p className="text-base rounded-full py-4 px-8 bg-sky-500 text-white border-transparent">My Resume</p>
+                                            <div className="mr-4 ">
+                                                <a href="#" className=" text-base rounded-full py-4 px-8 duration-200 hover:bg-opacity-70 bg-sky-500 text-white border-transparent">
+                                                    My Resume
+                                                </a>
                                             </div>
-                                            <div className="rounded-full px-8 py-4 border-transparent bg-gray-100">
-                                                <span className="font-medium text-base">My CV</span>
-                                            </div>
+                                            <a href="#" className="font-medium text-base rounded-full px-8 py-4 border-transparent bg-gray-100 duration-200 hover:bg-gray-300">
+                                                My CV
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -166,113 +210,60 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
             {/* Gallery */}
             <section className="py-8 bg-gray-100">
-                <div className="container px-4 mx-auto  ">
+                <div className="container px-4 mx-auto ">
                     <p className="font-medium text-xl md:text-3xl xl:text-7xl mb-5">My Works</p>
                     <p className="font-light text-lg md:text-xl xl:text-4xl my-6 text-gray-400">Here is the work I have done before, I hope you enjoy it</p>
-                    <div className="flex flex-wrap -m-4">
-                        <div className="w-full lg:w-1/3 p-4 ">
-                            <div className="p-4 bg-white rounded-lg shadow-xl">
-                                <div className="relative h-40 w-full mb-4">
-                                    <img className="w-full h-full object-cover rounded shadow-lg" src="/porto/tatj.png" alt="" />
-                                </div>
-                                <div className="flex mb-6 justify-between items-center">
-                                    <div>
-                                        <h3 className="text-sm font-medium">The Assasins The Journey</h3>
-                                        <span className="text-xs text-gray-500">Game Development</span>
+
+                    <div className="grid grid-cols-3 gap-4 p-4">
+                        {portofolio.map((item, index) => {
+                            return (
+                                <div className="p-4 bg-white rounded-lg shadow-xl" key={index}>
+                                    <div className="relative h-40 w-full mb-4">
+                                        <img className="w-full h-full object-cover rounded shadow-lg" src={item.image} alt="" />
+                                    </div>
+                                    <div className="flex mb-6 justify-between items-center">
+                                        <div>
+                                            <h3 className="text-sm font-medium">{item.titlegame}</h3>
+                                            <span className="text-xs text-gray-500">{item.developename}</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex mb-2 justify-between items-center">
+                                        <h4 className="text-xs font-medium">{item.tlproject}</h4>
+                                        <span className="inline-block py-1 px-2 rounded-full bg-green-50 text-xs text-green-500">{item.green}</span>
+                                    </div>
+                                    <div className="flex mb-2 justify-between items-center">
+                                        <h4 className="text-xs font-medium">{item.tleproject}</h4>
+                                        <span className="inline-block py-1 px-2 rounded-full bg-red-50 text-xs text-red-500">{item.red} </span>
+                                    </div>
+                                    <div className="flex mb-5 justify-between items-center">
+                                        <h4 className="text-xs font-medium">{item.roleproject}</h4>
+                                        <span className="text-xs text-indigo-500 font-medium">{item.role} </span>
+                                    </div>
+                                    <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
+                                        <a
+                                            className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200"
+                                            href="https://potatoprod.itch.io/inertia-showdown">
+                                            See Details
+                                        </a>
                                     </div>
                                 </div>
-                                <div className="flex mb-2 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Start</h4>
-                                    <span className="inline-block py-1 px-2 rounded-full bg-green-50 text-xs text-green-500">Q1 2021</span>
-                                </div>
-                                <div className="flex mb-2 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Final Date</h4>
-                                    <span className="inline-block py-1 px-2 rounded-full bg-red-50 text-xs text-red-500">Q2 2021</span>
-                                </div>
-                                <div className="flex mb-5 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Role</h4>
-                                    <span className="text-xs text-indigo-500 font-medium">Game Programming</span>
-                                </div>
-                                <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
-                                    <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" href="#">
-                                        See Details
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/3 p-4">
-                            <div className="p-4 bg-white rounded-lg shadow-xl">
-                                <div className="relative h-40 w-full mb-4">
-                                    <img className="w-full h-full object-cover rounded shadow-lg" src="/porto/inesh.png" alt="" />
-                                </div>
-                                <div className="flex mb-6 justify-between items-center">
-                                    <div>
-                                        <h3 className="text-sm font-medium">Inertia Showdown</h3>
-                                        <span className="text-xs text-gray-500">Game Development</span>
-                                    </div>
-                                </div>
-                                <div className="flex mb-2 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Start</h4>
-                                    <span className="inline-block py-1 px-2 rounded-full bg-green-50 text-xs text-green-500">25 Nov 2021</span>
-                                </div>
-                                <div className="flex mb-2 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Final Date</h4>
-                                    <span className="inline-block py-1 px-2 rounded-full bg-red-50 text-xs text-red-500">10 Jan 2022</span>
-                                </div>
-                                <div className="flex mb-5 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Role</h4>
-                                    <span className="text-xs text-indigo-500 font-medium">Game Programming</span>
-                                </div>
-                                <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
-                                    <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" href="https://potatoprod.itch.io/inertia-showdown">
-                                        See Details
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/3 p-4">
-                            <div className="p-4 bg-white rounded-lg shadow-xl">
-                                <div className="relative h-40 w-full mb-4">
-                                    <img className="w-full h-full object-cover rounded shadow-lg" src="/porto/alm.png" alt="" />
-                                </div>
-                                <div className="flex mb-6 justify-between items-center">
-                                    <div>
-                                        <h3 className="text-sm font-medium">à la mode — nusantara</h3>
-                                        <span className="text-xs text-gray-500">Game Development</span>
-                                    </div>
-                                </div>
-                                <div className="flex mb-2 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Start</h4>
-                                    <span className="inline-block py-1 px-2 rounded-full bg-green-50 text-xs text-green-500">2 Mar 2022</span>
-                                </div>
-                                <div className="flex mb-2 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Final Date</h4>
-                                    <span className="inline-block py-1 px-2 rounded-full bg-red-50 text-xs text-red-500">On Going</span>
-                                </div>
-                                <div className="flex mb-5 justify-between items-center">
-                                    <h4 className="text-xs font-medium">Role</h4>
-                                    <span className="text-xs text-indigo-500 font-medium">Game Programming</span>
-                                </div>
-                                <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
-                                    <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" href="#">
-                                        See Details
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
+            {/* Footer */}
             <section className="bg-gray-50">
                 <div className="container mx-auto px-4">
                     <div className="pt-10 pb-12">
                         <div className="relative lg:pb-8 mb-8 flex flex-wrap lg:border-b lg:border-gray-300">
-                            <p className="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first">© 2022. All rights reserved.</p>
-                            <div className="mb-12 lg:mb-0 lg:ml-auto w-full lg:w-auto order-first lg:order-last text-center lg:text-left">
+                            <p className="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first inline-block">© 2022. All rights reserved.</p>
+                            <div className="mb-6 lg:mb-0 lg:ml-auto w-full lg:w-auto order-first lg:order-last text-center lg:text-center">
                                 <a className="inline-block text-xl font-bold leading-none" href="#">
-                                    <img className="inline-block h-12 lg:h-6" src="/he_blck.png" alt="" width="auto" />
+                                    <img className="inline-block lg-6 lg:h-12" src="/he_blck.png" alt="" width="auto" />
                                 </a>
                             </div>
                         </div>
@@ -288,12 +279,6 @@ export default function Home() {
                                     );
                                 })}
                             </div>
-                            {/* <a className="inline-block w-10 mr-2 p-2 rounded" href="#">
-                                <img className="mx-auto hover:bg-opacity-50" src="/social/lid.png" />
-                            </a>
-                            <a className="inline-block w-10 p-2 rounded" href="#">
-                                <img className="mx-auto hover:bg-opacity-50" src="/social/github.png" />
-                            </a> */}
                         </div>
                     </div>
                 </div>
