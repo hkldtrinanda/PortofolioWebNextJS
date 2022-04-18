@@ -7,7 +7,7 @@ export default function Home() {
         },
         {
             label: "About",
-            href: "#",
+            href: "#about",
         },
         {
             label: "Works",
@@ -22,11 +22,11 @@ export default function Home() {
     const footer = [
         {
             logo: "/social/github.png",
-            href: "/",
+            href: "github.com/hkldtrinanda",
         },
         {
             logo: "/social/lid.png",
-            href: "/",
+            href: "https://www.linkedin.com/in/hkldtrinanda/",
         },
     ];
 
@@ -53,7 +53,7 @@ export default function Home() {
             green: "25 Nov 2021",
             red: "10 Jan 2022",
             role: "Game Programming",
-            href: "",
+            href: "https://potatoprod.itch.io/inertia-showdown",
         },
         {
             image: "/porto/alm.png",
@@ -63,6 +63,18 @@ export default function Home() {
             tleproject: "End",
             roleproject: "Role",
             green: "25 Mar 2022",
+            red: "On Going",
+            role: "Game Programming",
+            href: "",
+        },
+        {
+            image: "/porto/isvara.png",
+            titlegame: "Isvara",
+            developename: "Game Development",
+            tlproject: "Start",
+            tleproject: "End",
+            roleproject: "Role",
+            green: "7 Apr 2022",
             red: "On Going",
             role: "Game Programming",
             href: "",
@@ -146,22 +158,22 @@ export default function Home() {
                         </button>
                     </div>
                 </section>
+            </div>
 
-                {/* Profile */}
-                <section>
-                    <div className="bg-gray-100">
-                        <div className="container px-4 mx-auto">
-                            <div className="relative pt-24 mb-16 xl:mb-0 z-20">
-                                <span className="block mb-9 font-medium tracking-widest uppercase text-center text-sm text-gray-300 items-center">Hi, Welcome</span>
-                                <h1 className="max-w-3xl mx-auto font-heading font-medium text-center text-6xl md:text-10xl leading-tight">I`M HAIKAL DANUNG TRINANDA</h1>
-                            </div>
-                        </div>
-                        <div className="relative xl:-mt-32 max-w-max mx-auto ">
-                            <img src="/widget3.png" alt="" className="items-center" />
+            {/* Profile */}
+            <section>
+                <div className="bg-gray-100" id="profile">
+                    <div className="container px-4 mx-auto">
+                        <div className="relative pt-24 mb-16 xl:mb-0 z-20">
+                            <span className="block mb-9 font-medium tracking-widest uppercase text-center text-sm text-gray-300 items-center">Hi, Welcome</span>
+                            <h1 className="max-w-3xl mx-auto font-heading font-medium text-center text-6xl md:text-10xl leading-tight">I`M HAIKAL DANUNG TRINANDA</h1>
                         </div>
                     </div>
-                </section>
-            </div>
+                    <div className="relative xl:-mt-32 max-w-max mx-auto ">
+                        <img src="/widget3.png" alt="" className="items-center" />
+                    </div>
+                </div>
+            </section>
             <section className="bg-gray-100 py-24 2xl:py-44 overflow-hidden" id="about">
                 <div className="container px-4 mx-auto">
                     <div className="text-center">
@@ -243,9 +255,7 @@ export default function Home() {
                                         <span className="text-xs text-indigo-500 font-medium">{item.role} </span>
                                     </div>
                                     <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
-                                        <a
-                                            className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200"
-                                            href="https://potatoprod.itch.io/inertia-showdown">
+                                        <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" href={item.href}>
                                             See Details
                                         </a>
                                     </div>
