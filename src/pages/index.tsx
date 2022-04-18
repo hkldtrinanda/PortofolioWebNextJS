@@ -1,24 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
+import NavigationBar from "@/components/navigationBar";
+import Portofolio from "@/components/Portofolios";
 export default function Home() {
-    const navbar = [
-        {
-            label: "Home",
-            href: "#",
-        },
-        {
-            label: "About",
-            href: "#about",
-        },
-        {
-            label: "Works",
-            href: "#",
-        },
-        {
-            label: "Contact",
-            href: "#",
-        },
-    ];
-
     const footer = [
         {
             logo: "/social/github.png",
@@ -30,160 +13,9 @@ export default function Home() {
         },
     ];
 
-    const portofolio = [
-        {
-            image: "/porto/tatj.png",
-            titlegame: "The Assasins: The Journey",
-            developename: "Game Development",
-            tlproject: "Start",
-            tleproject: "End",
-            roleproject: "Role",
-            green: "Q1 2021",
-            red: "Q2 2021",
-            role: "Game Programming",
-            href: "",
-        },
-        {
-            image: "/porto/inesh.png",
-            titlegame: "Inertia Showdown",
-            developename: "Game Development",
-            tlproject: "Start",
-            tleproject: "End",
-            roleproject: "Role",
-            green: "25 Nov 2021",
-            red: "10 Jan 2022",
-            role: "Game Programming",
-            href: "https://potatoprod.itch.io/inertia-showdown",
-        },
-        {
-            image: "/porto/alm.png",
-            titlegame: "A La Mode - Nusantara",
-            developename: "Game Development",
-            tlproject: "Start",
-            tleproject: "End",
-            roleproject: "Role",
-            green: "25 Mar 2022",
-            red: "On Going",
-            role: "Game Programming",
-            href: "",
-        },
-        {
-            image: "/porto/isvara.png",
-            titlegame: "Isvara",
-            developename: "Game Development",
-            tlproject: "Start",
-            tleproject: "End",
-            roleproject: "Role",
-            green: "7 Apr 2022",
-            red: "On Going",
-            role: "Game Programming",
-            href: "",
-        },
-        {
-            image: "/porto/404.png",
-            titlegame: "Ngebook",
-            developename: "Interactive Media",
-            tlproject: "Start",
-            tleproject: "End",
-            roleproject: "Role",
-            green: "Q3 2019",
-            red: "Q4 2019",
-            role: "Programming",
-            href: "",
-        },
-        {
-            image: "/porto/404.png",
-            titlegame: "-",
-            developename: "Game Development",
-            tlproject: "Start",
-            tleproject: "End",
-            roleproject: "Role",
-            green: "On Going",
-            red: "On Going",
-            role: "Game Programming",
-            href: "",
-        },
-    ];
-
     return (
         <>
-            <div>
-                <section className="text-white text-lg font-sans font-bold relative bg-gray-900">
-                    <nav className="flex justify-between px-6 lg:px-12 py-4">
-                        <div className="flex w-full justify-between grid-cols-2">
-                            <a href="#">
-                                <img className="h-12" src="/he.png" alt="" />
-                            </a>
-                            <div className="flex items-center ml-auto">
-                                <ul className="hidden px-4 xl:flex">
-                                    <li className="">
-                                        {navbar.map((item, index) => {
-                                            return (
-                                                <a key={index} className="hover:opacity-80 mr-11 border-b border-blue-500 border-opacity-40 pb-px" href={item.href}>
-                                                    {item.label}
-                                                </a>
-                                            );
-                                        })}
-                                    </li>
-                                    <li className="border-b border-blue-500 border-opacity-40 pb-px"></li>
-                                </ul>
-                            </div>
-                            <div className="relative hidden xl:block">
-                                <img className="absolute top-1/2 transform -translate-y-2/4 pl-6 mt-px" src="uinel-assets/elements/navigations/search-gray-icon.svg" alt="" />
-                            </div>
-                        </div>
-                        <button className="navbar-burger self-center xl:hidden focus:outline-none">
-                            <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="25" height="2" fill="currentColor"></rect>
-                                <rect y="14" width="25" height="2" fill="currentColor"></rect>
-                            </svg>
-                        </button>
-                    </nav>
-                    <div className="navbar-menu hidden fixed top-0 right-0 bottom-0 w-5/6 max-w-sm z-50">
-                        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
-                        <nav className="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
-                            <div className="flex items-center pl-16 mb-8">
-                                <a className="text-2xl text-gray-800 font-bold" href="#">
-                                    <img className="h-12" src="he_blck.png" alt="" />
-                                </a>
-                            </div>
-                            <div className="flex items-center mb-10 px-10">
-                                <a className="flex items-center ml-1" href="#" />
-                            </div>
-                            <div>
-                                <ul>
-                                    <li className="">
-                                        {navbar.map((item, index) => {
-                                            return (
-                                                <a key={index} className="hover:opacity-80 mr-11 border-b border-blue-500 border-opacity-40 pb-px" href={item.href}>
-                                                    {item.label}
-                                                </a>
-                                            );
-                                        })}
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="mt-auto px-10">
-                                <button className="py-3 px-5 mt-6 w-full font-body font-bold uppercase tracking-wide text-sm border-2 border-gray-200 hover:border-gray-300 border-opacity-50 rounded-full">
-                                    <a className="block mt-px text-gray-500" href="#porto">
-                                        My Works
-                                    </a>
-                                </button>
-                                <p className="mt-6 mb-4 text-center">
-                                    <span className="text-sm text-darkBlueGray-400">2021 © hkldtrinanda.</span>
-                                </p>
-                            </div>
-                        </nav>
-                        <button className="navbar-close absolute top-5 p-6 right-5">
-                            <div className="absolute top-3">
-                                <span className="absolute w-px h-6 bg-black transform -rotate-45"></span>
-                                <span className="absolute w-px h-6 bg-black transform rotate-45"></span>
-                            </div>
-                        </button>
-                    </div>
-                </section>
-            </div>
-
+            <NavigationBar></NavigationBar>
             {/* Profile */}
             <section>
                 <div className="bg-gray-100" id="profile">
@@ -247,48 +79,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Gallery */}
-            <section className="py-8 bg-gray-100">
-                <div className="container px-4 mx-auto ">
-                    <p className="font-medium text-xl md:text-3xl xl:text-7xl mb-5">My Works</p>
-                    <p className="font-light text-lg md:text-xl xl:text-4xl my-6 text-gray-400">Here is the work I have done before, I hope you enjoy it</p>
-
-                    <div className="grid grid-cols-3 gap-4 p-4">
-                        {portofolio.map((item, index) => {
-                            return (
-                                <div className="p-4 bg-white rounded-lg shadow-xl" key={index}>
-                                    <div className="relative h-40 w-full mb-4">
-                                        <img className="w-full h-full object-cover rounded shadow-lg" src={item.image} alt="" />
-                                    </div>
-                                    <div className="flex mb-6 justify-between items-center">
-                                        <div>
-                                            <h3 className="text-sm font-medium">{item.titlegame}</h3>
-                                            <span className="text-xs text-gray-500">{item.developename}</span>
-                                        </div>
-                                    </div>
-                                    <div className="flex mb-2 justify-between items-center">
-                                        <h4 className="text-xs font-medium">{item.tlproject}</h4>
-                                        <span className="inline-block py-1 px-2 rounded-full bg-green-50 text-xs text-green-500">{item.green}</span>
-                                    </div>
-                                    <div className="flex mb-2 justify-between items-center">
-                                        <h4 className="text-xs font-medium">{item.tleproject}</h4>
-                                        <span className="inline-block py-1 px-2 rounded-full bg-red-50 text-xs text-red-500">{item.red} </span>
-                                    </div>
-                                    <div className="flex mb-5 justify-between items-center">
-                                        <h4 className="text-xs font-medium">{item.roleproject}</h4>
-                                        <span className="text-xs text-indigo-500 font-medium">{item.role} </span>
-                                    </div>
-                                    <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
-                                        <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" href={item.href}>
-                                            See Details
-                                        </a>
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
+            <Portofolio></Portofolio>
             {/* Footer */}
             <section className="bg-gray-50">
                 <div className="container mx-auto px-4">
