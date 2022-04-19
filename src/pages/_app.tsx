@@ -4,9 +4,9 @@ import Head from "next/head";
 import MetaTags from "@/components/MetaTags";
 
 const metaData = {
-    title: "Portofolio Website Hkldtrinanda",
-    description: "Portofolio Website Hkldtrinanda",
-    url: "https://www.hkldtrinanda.works",
+    title: "Portofolio Website",
+    description: "With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!",
+    url: "https://www.example.com",
     image: "https://www.example.com/image.jpg",
     themeColor: "#ffffff",
     keywords: "key1, key2, key3, key4, key5, key6",
