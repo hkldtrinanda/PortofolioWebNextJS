@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import NavigationBar from "@/components/navigationBar";
 import Portofolio from "@/components/Portofolios";
+import Headtitle from "@/components/Heads";
 
 export default function Home() {
     const footer = [
@@ -16,6 +17,7 @@ export default function Home() {
 
     return (
         <>
+            <Headtitle></Headtitle>
             <NavigationBar></NavigationBar>
             {/* Profile */}
             <section>

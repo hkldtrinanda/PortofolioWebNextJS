@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 
-export default function Portofolio() {
+export default function Headtitle() {
     return (
         <>
             <div>
