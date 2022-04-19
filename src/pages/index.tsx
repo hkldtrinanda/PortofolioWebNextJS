@@ -18,6 +18,10 @@ export default function Home() {
     return (
         <>
             <Headtitle></Headtitle>
+            <div>
+                <title>Portofolio Website</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </div>
             <NavigationBar></NavigationBar>
             {/* Profile */}
             <section>
