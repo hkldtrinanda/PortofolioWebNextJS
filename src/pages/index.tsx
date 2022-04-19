@@ -70,7 +70,10 @@ export default function Home() {
                                                     My Resume
                                                 </a>
                                             </div>
-                                            <a href="/documents/#" className="font-medium text-base rounded-full px-8 py-4 border-transparent bg-gray-100 duration-300 hover:bg-gray-300">
+                                            <a
+                                                href="/documents/#"
+                                                className="font-medium text-base rounded-full px-8 py-4 border-transparent bg-gray-100 duration-300 hover:bg-gray-300"
+                                                target="_blank">
                                                 My CV
                                             </a>
                                         </div>
