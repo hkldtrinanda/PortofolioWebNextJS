@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import NavigationBar from "@/components/navigationBar";
 import Portofolio from "@/components/Portofolios";
-import Headtitle from "@/components/Heads";
 
 export default function Home() {
     const footer = [
@@ -17,7 +16,6 @@ export default function Home() {
 
     return (
         <>
-            <Headtitle></Headtitle>
             <NavigationBar></NavigationBar>
             {/* Profile */}
             <section>
@@ -65,11 +63,14 @@ export default function Home() {
                                     <div className="h-full pl-12 pr-4 bg-white rounded-xl shadow-lg py-12">
                                         <div className="flex items-center">
                                             <div className="mr-4 ">
-                                                <a href="#" className=" text-base rounded-full py-4 px-8 duration-300 hover:bg-opacity-70 bg-sky-500 text-white border-transparent">
+                                                <a
+                                                    href="/documents/resume_hdt.pdf"
+                                                    download
+                                                    className=" text-base rounded-full py-4 px-8 duration-300 hover:bg-opacity-70 bg-sky-500 text-white border-transparent">
                                                     My Resume
                                                 </a>
                                             </div>
-                                            <a href="#" className="font-medium text-base rounded-full px-8 py-4 border-transparent bg-gray-100 duration-300 hover:bg-gray-300">
+                                            <a href="/documents/#" className="font-medium text-base rounded-full px-8 py-4 border-transparent bg-gray-100 duration-300 hover:bg-gray-300">
                                                 My CV
                                             </a>
                                         </div>
@@ -98,7 +99,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="flex justify-center">
-                            <div className="grid grid-cols-2">
+                            <div className="grid grid-cols-2 ">
                                 {footer.map((item, index) => {
                                     return (
                                         <div key={index}>
