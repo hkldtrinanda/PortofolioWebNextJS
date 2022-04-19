@@ -79,7 +79,7 @@ export default function Portofolio() {
     return (
         <>
             {/* Gallery */}
-            <section className="py-8 bg-gray-100">
+            <section className="py-8 bg-gray-100" id="works">
                 <div className="container px-4 mx-auto ">
                     <p className="font-medium text-xl md:text-3xl xl:text-7xl mb-5">My Works</p>
                     <p className="font-light text-lg md:text-xl xl:text-4xl my-6 text-gray-400">Here is the work I have done before, I hope you enjoy it</p>

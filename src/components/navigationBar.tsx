@@ -11,11 +11,11 @@ export default function NavigationBar() {
         },
         {
             label: "Works",
-            href: "#",
+            href: "#works",
         },
         {
             label: "Contact",
-            href: "#",
+            href: "#contact",
         },
     ];
 
