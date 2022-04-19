@@ -5,7 +5,7 @@ import MetaTags from "@/components/MetaTags";
 
 const metaData = {
     title: "Portofolio Website",
-    description: "With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!",
+    description: "Portofolio Website",
     url: "https://www.example.com",
     image: "https://www.example.com/image.jpg",
     themeColor: "#ffffff",
