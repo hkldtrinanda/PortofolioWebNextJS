@@ -15,10 +15,7 @@
     "private": true,
     "contributors": [],
     "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
+        "build": "next build && next export"
     },
     "dependencies": {
         "@prisma/client": "^3.11.0",

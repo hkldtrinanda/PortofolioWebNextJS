@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import NavigationBar from "@/components/navigationBar";
 import Portofolio from "@/components/Portofolios";
+
 export default function Home() {
     const footer = [
         {
@@ -51,7 +52,9 @@ export default function Home() {
                                             <img className="mr-8 object-cover rounded-full w-20" src="/Untitled1111.png" alt="" />
                                             <div>
                                                 <h4 className="text-xl font-heading font-medium mb-2">Haikal D Trinanda</h4>
-                                                <p className="text-gray-400">Runes</p>
+                                                <a href="http://runes.asia">
+                                                    <p className="text-gray-400 hover:text-gray-600 duration-300 font-medium">Runes</p>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -60,11 +63,11 @@ export default function Home() {
                                     <div className="h-full pl-12 pr-4 bg-white rounded-xl shadow-lg py-12">
                                         <div className="flex items-center">
                                             <div className="mr-4 ">
-                                                <a href="#" className=" text-base rounded-full py-4 px-8 duration-200 hover:bg-opacity-70 bg-sky-500 text-white border-transparent">
+                                                <a href="#" className=" text-base rounded-full py-4 px-8 duration-300 hover:bg-opacity-70 bg-sky-500 text-white border-transparent">
                                                     My Resume
                                                 </a>
                                             </div>
-                                            <a href="#" className="font-medium text-base rounded-full px-8 py-4 border-transparent bg-gray-100 duration-200 hover:bg-gray-300">
+                                            <a href="#" className="font-medium text-base rounded-full px-8 py-4 border-transparent bg-gray-100 duration-300 hover:bg-gray-300">
                                                 My CV
                                             </a>
                                         </div>
@@ -78,7 +81,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
+            {/* Portofolio */}
             <Portofolio></Portofolio>
             {/* Footer */}
             <section className="bg-gray-50">
