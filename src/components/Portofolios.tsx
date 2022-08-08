@@ -51,7 +51,7 @@ export default function Portofolio() {
             href: "https://hkldtrinanda.itch.io/isvara-mobile-ar",
         },
         {
-            image: "/porto/ui.png",
+            image: "/porto/ui.jpg",
             titlegame: "Ngebook",
             developename: "Interactive Media",
             tlproject: "Start",
