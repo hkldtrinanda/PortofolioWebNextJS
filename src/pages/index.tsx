@@ -42,9 +42,9 @@ export default function Home() {
                                             <img className="mr-8 object-cover rounded-full w-20" src="/Untitled1111.png" alt="" />
                                             <div>
                                                 <h4 className="text-xl font-heading font-medium mb-2">Haikal D Trinanda</h4>
-                                                <a href="http://runes.asia">
+                                                {/* <a href="http://runes.asia">
                                                     <p className="text-gray-400 hover:text-gray-600 duration-300 font-medium">Runes</p>
-                                                </a>
+                                                </a> */}
                                             </div>
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@ export default function Home() {
                                         <div className="flex items-center">
                                             <div className="mr-4 ">
                                                 <a
-                                                    href="/documents/resume_hdt.pdf"
+                                                    href="/documents/resume.pdf"
                                                     download
                                                     className=" text-base rounded-full py-4 px-8 duration-300 hover:bg-opacity-70 bg-sky-500 text-white border-transparent">
                                                     My Resume

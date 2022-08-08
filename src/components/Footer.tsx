@@ -4,7 +4,7 @@ export default function Footers() {
     const footer = [
         {
             logo: "/social/github.png",
-            href: "github.com/hkldtrinanda",
+            href: "https://github.com/hkldtrinanda",
         },
         {
             logo: "/social/lid.png",
