@@ -1,5 +1,8 @@
+import { useState } from "react";
+
 /* eslint-disable jsx-a11y/alt-text */
 export default function NavigationBar() {
+    const [dropdownOpen, setdropdownOpen] = useState(false);
     const navbar = [
         {
             label: "Home",
@@ -46,13 +49,15 @@ export default function NavigationBar() {
                                 <img className="absolute top-1/2 transform -translate-y-2/4 pl-6 mt-px" src="uinel-assets/elements/navigations/search-gray-icon.svg" alt="" />
                             </div>
                         </div>
-                        <button className="navbar-burger self-center xl:hidden focus:outline-none">
+                        {/* Mobile Responsive */}
+                        <button className="navbar-burger self-center xl:hidden focus:outline-none" onClick={() => setdropdownOpen(!dropdownOpen)}>
                             <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="25" height="2" fill="currentColor"></rect>
                                 <rect y="14" width="25" height="2" fill="currentColor"></rect>
                             </svg>
                         </button>
                     </nav>
+                    {/* Mobile Responsive */}
                     <div className="navbar-menu hidden fixed top-0 right-0 bottom-0 w-5/6 max-w-sm z-50">
                         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
                         <nav className="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">

@@ -36,7 +36,7 @@ export default function Portofolio() {
             green: "25 Mar 2022",
             red: "On Going",
             role: "Game Programming",
-            href: "",
+            href: "#",
         },
         {
             image: "/porto/isvara.png",
@@ -63,16 +63,16 @@ export default function Portofolio() {
             href: "https://hkldtrinanda.itch.io/ngebook",
         },
         {
-            image: "/porto/404.png",
+            image: "/porto/FS.png",
             titlegame: "Fire Safety",
             developename: "Game Development",
             tlproject: "Start",
             tleproject: "End",
             roleproject: "Role",
-            green: "On Going",
-            red: "On Going",
+            green: "6 Jun 2022",
+            red: "24 Sep 2022",
             role: "Game Programming",
-            href: "",
+            href: "https://hkldtrinanda.itch.io/fire-safety",
         },
     ];
 
@@ -110,7 +110,7 @@ export default function Portofolio() {
                                         <span className="text-xs text-indigo-500 font-medium">{item.role} </span>
                                     </div>
                                     <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
-                                        <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" href={item.href}>
+                                        <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" target="_blank" href={item.href}>
                                             See Details
                                         </a>
                                     </div>
