@@ -1,6 +1,5 @@
-import { useState } from "react";
-
 /* eslint-disable jsx-a11y/alt-text */
+import React, { useState } from "react";
 export default function NavigationBar() {
     const [dropdownOpen, setdropdownOpen] = useState(false);
     const navbar = [
