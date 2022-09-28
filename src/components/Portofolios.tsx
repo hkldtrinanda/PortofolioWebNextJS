@@ -110,7 +110,7 @@ export default function Portofolio() {
                                         <span className="text-xs text-indigo-500 font-medium">{item.role} </span>
                                     </div>
                                     <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
-                                        <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" target="_blank" href={item.href}>
+                                        <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" target="_blank" href={item.href} rel="noreferrer">
                                             See Details
                                         </a>
                                     </div>

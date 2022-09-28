@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from "react";
+
 export default function NavigationBar() {
-    const [dropdownOpen, setdropdownOpen] = useState(false);
     const navbar = [
         {
             label: "Home",
@@ -49,7 +48,7 @@ export default function NavigationBar() {
                             </div>
                         </div>
                         {/* Mobile Responsive */}
-                        <button className="navbar-burger self-center xl:hidden focus:outline-none" onClick={() => setdropdownOpen(!dropdownOpen)}>
+                        <button className="navbar-burger self-center xl:hidden focus:outline-none">
                             <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="25" height="2" fill="currentColor"></rect>
                                 <rect y="14" width="25" height="2" fill="currentColor"></rect>
