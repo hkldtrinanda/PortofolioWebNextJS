@@ -1,16 +1,16 @@
 {
-    "name": "my-nextjs-project",
+    "name": "Portofolio",
     "version": "1.1.0",
-    "description": "NextJS project template by Rafly Maulana",
+    "description": "Portofolio Website by Haikal Danung T",
     "main": "index.js",
-    "repository": "https://github.com/raflymln/nextjs-template.git",
+    "repository": "",
     "bugs": "https://github.com/raflymln/nextjs-template",
     "author": {
-        "name": "Rafly Maulana",
-        "email": "mraflymaulana@gmail.com",
-        "url": "https://raflymaulana.me"
+        "name": "hkldtrinanda",
+        "email": "hkldtrinanda12@gmail.com",
+        "url": "https://hkldtrinanda.works"
     },
-    "homepage": "https://raflymaulana.me",
+    "homepage": "https://hkldtrinanda.works",
     "license": "MIT",
     "private": true,
     "contributors": [],

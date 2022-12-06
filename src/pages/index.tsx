@@ -42,9 +42,9 @@ export default function Home() {
                                             <img className="mr-8 object-cover rounded-full w-20" src="/Untitled1111.png" alt="" />
                                             <div>
                                                 <h4 className="text-xl font-heading font-medium mb-2">Haikal D Trinanda</h4>
-                                                {/* <a href="http://runes.asia">
-                                                    <p className="text-gray-400 hover:text-gray-600 duration-300 font-medium">Runes</p>
-                                                </a> */}
+                                                <a href="https://cemong-studio.itch.io">
+                                                    <p className="text-gray-400 hover:text-gray-600 duration-300 font-medium">Cemong Studio</p>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

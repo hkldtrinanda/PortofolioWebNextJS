@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS + Typescript + PrismaJS
+<!-- # Next.js + Tailwind CSS + Typescript + PrismaJS
 
 > This project is created and configured using Yarn, so you might wanna add another dependencies or edit any installed dependencies using Yarn to prevent error and stuff like that.
 
@@ -73,4 +73,4 @@ npx create-next-app --example https://github.com/raflymln/nextjs-template/tree/m
 yarn create next-app --example https://github.com/raflymln/nextjs-template/tree/main my-nextjs-project
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)). -->
