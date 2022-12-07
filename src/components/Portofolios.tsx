@@ -5,7 +5,7 @@ export default function Portofolio() {
         {
             image: "/porto/tatj.png",
             titlegame: "The Assasins: The Journey",
-            developename: "Game Development",
+            developename: "Game Development (first game, and first time foray into game dev)",
             tlproject: "Start",
             tleproject: "End",
             roleproject: "Role",
@@ -120,7 +120,7 @@ export default function Portofolio() {
                     <p className="font-medium text-xl md:text-3xl xl:text-7xl mb-5">My Works</p>
                     <p className="font-light text-lg md:text-xl xl:text-4xl my-6 text-gray-400">Here is the work I have done before, I hope you enjoy it</p>
 
-                    <div className="grid grid-cols-3 gap-4 p-4">
+                    <div className="grid gap-8 row-gap-5 mb-8 lg:grid-cols-3 lg:row-gap-8">
                         {portofolio.map((item, index) => {
                             return (
                                 <div className="p-4 bg-white rounded-lg shadow-xl" key={index}>
