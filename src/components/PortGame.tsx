@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 
-export default function Portofolio() {
+export default function PortGame() {
     const portofolio = [
         {
             image: "/porto/tatj.png",
@@ -98,18 +98,6 @@ export default function Portofolio() {
             role: "Game Programming",
             href: "https://cemong-studio.itch.io/asterism-completion",
         },
-        // {
-        //     image: "/porto/FS.png",
-        //     titlegame: "Fire Safety",
-        //     developename: "Game Development",
-        //     tlproject: "Start",
-        //     tleproject: "End",
-        //     roleproject: "Role",
-        //     green: "6 Jun 2022",
-        //     red: "24 Sep 2022",
-        //     role: "Game Programming",
-        //     href: "https://hkldtrinanda.itch.io/fire-safety",
-        // },
     ];
 
     return (
@@ -119,6 +107,7 @@ export default function Portofolio() {
                 <div className="container px-4 mx-auto ">
                     <p className="font-medium text-xl md:text-3xl xl:text-7xl mb-5">My Works</p>
                     <p className="font-light text-lg md:text-xl xl:text-4xl my-6 text-gray-400">Here is the work I have done before, I hope you enjoy it</p>
+                    <p className="font-light text-md md:text-lg xl:text-2xl my-6 text-gray-400">Game Development</p>
 
                     <div className="grid gap-8 row-gap-5 mb-8 lg:grid-cols-3 lg:row-gap-8">
                         {portofolio.map((item, index) => {

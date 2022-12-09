@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import NavigationBar from "@/components/navigationBar";
-import Portofolio from "@/components/Portofolios";
+import PortGame from "@/components/PortGame";
+import PortFilter from "@/components/PortFilter";
 import Footers from "@/components/Footer";
 
 export default function Home() {
@@ -75,7 +76,9 @@ export default function Home() {
                 </div>
             </section>
             {/* Portofolio */}
-            <Portofolio></Portofolio>
+            <PortGame></PortGame>
+            {/* Portofolio Filter */}
+            <PortFilter></PortFilter>
             {/* Footer */}
             <Footers></Footers>
         </>
