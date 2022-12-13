@@ -55,18 +55,18 @@ export default function Home() {
                                         <div className="flex items-center">
                                             <div className="mr-4 ">
                                                 <a
-                                                    href="/documents/resume.pdf"
+                                                    href="/documents/CV_Uploaded.pdf"
                                                     download
                                                     className=" text-base rounded-full py-4 px-8 duration-300 hover:bg-opacity-70 bg-sky-500 text-white border-transparent">
                                                     My Resume
                                                 </a>
                                             </div>
-                                            <a
+                                            {/* <a
                                                 href="/documents/#"
                                                 className="font-medium text-base rounded-full px-8 py-4 border-transparent bg-gray-100 duration-300 hover:bg-gray-300"
                                                 target="_blank">
                                                 My CV
-                                            </a>
+                                            </a> */}
                                         </div>
                                     </div>
                                 </div>
