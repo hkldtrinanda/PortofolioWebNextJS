@@ -5,7 +5,7 @@ export default function PortGame() {
         {
             image: "/porto/tatj.png",
             titlegame: "The Assasins: The Journey",
-            developename: "Game Development (first game, and first time foray into game dev)",
+            developename: "Game Development (first time learning gamedev, and my first game)",
             tlproject: "Start",
             tleproject: "End",
             roleproject: "Role",
@@ -29,7 +29,7 @@ export default function PortGame() {
         {
             image: "/porto/alm.png",
             titlegame: "A La Mode - Nusantara",
-            developename: "Game Development",
+            developename: "Game Development (Not Finished)",
             tlproject: "Start",
             tleproject: "End",
             roleproject: "Role",
@@ -97,6 +97,18 @@ export default function PortGame() {
             red: "13 Nov 2022",
             role: "Game Programming",
             href: "https://cemong-studio.itch.io/asterism-completion",
+        },
+        {
+            image: "/porto/TEOE.png",
+            titlegame: "The Emerald of Equator",
+            developename: "Game Development",
+            tlproject: "Start",
+            tleproject: "End",
+            roleproject: "Role",
+            green: "11 Nov 2022",
+            red: "11 Dec 2022",
+            role: "Game Programming",
+            href: "https://cemong-studio.itch.io/aratnasun",
         },
     ];
 

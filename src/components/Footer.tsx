@@ -10,6 +10,10 @@ export default function Footers() {
             logo: "/social/lid.png",
             href: "https://www.linkedin.com/in/hkldtrinanda/",
         },
+        {
+            logo: "/social/itchio.png",
+            href: "https://hkldtrinanda.itch.io/",
+        },
     ];
 
     return (
@@ -27,12 +31,12 @@ export default function Footers() {
                             </div>
                         </div>
                         <div className="flex justify-center">
-                            <div className="grid grid-cols-2 ">
+                            <div className="grid grid-cols-3 ">
                                 {footer.map((item, index) => {
                                     return (
                                         <div key={index}>
                                             <a className="inline-block w-10 mr-2 p-2 rounded" href={item.href}>
-                                                <img src={item.logo} alt="" className="mx-auto hover:bg-opacity-50" />
+                                                <img src={item.logo} alt="" className="mx-auto hover:bg-opacity-10" />
                                             </a>
                                         </div>
                                     );
