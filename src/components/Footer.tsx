@@ -23,7 +23,7 @@ export default function Footers() {
                 <div className="container mx-auto px-4">
                     <div className="pt-10 pb-12">
                         <div className="relative lg:pb-8 mb-8 flex flex-wrap lg:border-b lg:border-gray-300">
-                            <p className="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first inline-block">© 2022. All rights reserved.</p>
+                            <p className="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first inline-block">© 2023. All rights reserved.</p>
                             <div className="mb-6 lg:mb-0 lg:ml-auto w-full lg:w-auto order-first lg:order-last text-center lg:text-center">
                                 <a href="#">
                                     <img className="inline-block lg:h-10 md:h-8 sm:h-6 h-8 " src="/he_blck.png" alt="" width="auto" />

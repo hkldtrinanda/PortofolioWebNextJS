@@ -87,7 +87,7 @@ export default function NavigationBar() {
                                     </a>
                                 </button>
                                 <p className="mt-6 mb-4 text-center">
-                                    <span className="text-sm text-darkBlueGray-400">2021 © hkldtrinanda.</span>
+                                    <span className="text-sm text-darkBlueGray-400">2023 © hkldtrinanda.</span>
                                 </p>
                             </div>
                         </nav>
