@@ -13,6 +13,7 @@ export default function PortGame() {
             red: "Q2 2021",
             role: "Game Programming",
             href: "https://sharemygame.com/@hkldtrinanda/theassasins-thejourney",
+            legal: "#",
         },
         {
             image: "/porto/inesh.png",
@@ -25,6 +26,8 @@ export default function PortGame() {
             red: "10 Jan 2022",
             role: "Game Programming",
             href: "https://potatoprod.itch.io/inertia-showdown",
+            legal: "#",
+
         },
         {
             image: "/porto/alm.png",
@@ -37,6 +40,7 @@ export default function PortGame() {
             red: "On Going",
             role: "Game Programming",
             href: "#",
+            legal: "#",
         },
         {
             image: "/porto/isvara.png",
@@ -49,6 +53,7 @@ export default function PortGame() {
             red: "31 May 2022",
             role: "Game Programming",
             href: "https://hkldtrinanda.itch.io/isvara-mobile-ar",
+            legal: "#",
         },
         {
             image: "/porto/ui.jpg",
@@ -61,6 +66,7 @@ export default function PortGame() {
             red: "Q4 2019",
             role: "Programming",
             href: "https://hkldtrinanda.itch.io/ngebook",
+            legal: "#",
         },
         {
             image: "/porto/FS.png",
@@ -73,6 +79,7 @@ export default function PortGame() {
             red: "24 Sep 2022",
             role: "Game Programming",
             href: "https://hkldtrinanda.itch.io/fire-safety",
+            legal: "https://pdki-indonesia.dgip.go.id/detail/EC00202275496?type=copyright&keyword=",
         },
         {
             image: "/porto/DHITW.png",
@@ -85,6 +92,7 @@ export default function PortGame() {
             red: "10 Nov 2022",
             role: "Game Programming",
             href: "https://cemong-studio.itch.io/dhitw",
+            legal: "https://pdki-indonesia.dgip.go.id/detail/EC002022104276?type=copyright&keyword=",
         },
         {
             image: "/porto/AC.png",
@@ -97,6 +105,7 @@ export default function PortGame() {
             red: "13 Nov 2022",
             role: "Game Programming",
             href: "https://cemong-studio.itch.io/asterism-completion",
+            legal: "#",
         },
         {
             image: "/porto/TEOE.png",
@@ -109,6 +118,7 @@ export default function PortGame() {
             red: "11 Dec 2022",
             role: "Game Programming",
             href: "https://cemong-studio.itch.io/aratnasun",
+            legal: "#",
         },
     ];
 
@@ -146,10 +156,17 @@ export default function PortGame() {
                                         <h4 className="text-xs font-medium">{item.roleproject}</h4>
                                         <span className="text-xs text-indigo-500 font-medium">{item.role} </span>
                                     </div>
-                                    <div className="flex items-ceenter justify-between border-t border-gray-50 pt-4">
-                                        <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" target="_blank" href={item.href} rel="noreferrer">
-                                            See Details
-                                        </a>
+                                    <div className="flex grid-cols-2 justify-left gap-4">
+                                        <div className="flex items-center justify-between border-t border-gray-50 pt-4">
+                                            <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" target="_blank" href={item.href} rel="noreferrer">
+                                                See Details
+                                            </a>
+                                        </div>
+                                        <div className="flex items-center justify-between border-t border-gray-50 pt-4">
+                                            <a className="py-2 px-3 bg-red-500 hover:bg-red-600 rounded text-xs text-white transition duration-200" target="_blank" href={item.legal} rel="noreferrer">
+                                                Legal Details
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             );
