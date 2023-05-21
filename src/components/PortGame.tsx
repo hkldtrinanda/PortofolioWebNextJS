@@ -12,7 +12,7 @@ export default function PortGame() {
             green: "Q1 2021",
             red: "Q2 2021",
             role: "Game Programming",
-            href: "https://sharemygame.com/@hkldtrinanda/theassasins-thejourney",
+            direct: "https://sharemygame.com/@hkldtrinanda/theassasins-thejourney",
             legal: "#",
         },
         {
@@ -25,9 +25,8 @@ export default function PortGame() {
             green: "25 Nov 2021",
             red: "10 Jan 2022",
             role: "Game Programming",
-            href: "https://potatoprod.itch.io/inertia-showdown",
+            direct: "https://potatoprod.itch.io/inertia-showdown",
             legal: "#",
-
         },
         {
             image: "/porto/alm.png",
@@ -39,7 +38,7 @@ export default function PortGame() {
             green: "25 Mar 2022",
             red: "On Going",
             role: "Game Programming",
-            href: "#",
+            direct: "#",
             legal: "#",
         },
         {
@@ -52,7 +51,7 @@ export default function PortGame() {
             green: "7 Apr 2022",
             red: "31 May 2022",
             role: "Game Programming",
-            href: "https://hkldtrinanda.itch.io/isvara-mobile-ar",
+            direct: "https://hkldtrinanda.itch.io/isvara-mobile-ar",
             legal: "#",
         },
         {
@@ -65,7 +64,7 @@ export default function PortGame() {
             green: "Q3 2019",
             red: "Q4 2019",
             role: "Programming",
-            href: "https://hkldtrinanda.itch.io/ngebook",
+            direct: "https://hkldtrinanda.itch.io/ngebook",
             legal: "#",
         },
         {
@@ -78,7 +77,7 @@ export default function PortGame() {
             green: "6 Jun 2022",
             red: "24 Sep 2022",
             role: "Game Programming",
-            href: "https://hkldtrinanda.itch.io/fire-safety",
+            direct: "https://hkldtrinanda.itch.io/fire-safety",
             legal: "https://pdki-indonesia.dgip.go.id/detail/EC00202275496?type=copyright&keyword=",
         },
         {
@@ -91,7 +90,7 @@ export default function PortGame() {
             green: "15 Oct 2022",
             red: "10 Nov 2022",
             role: "Game Programming",
-            href: "https://cemong-studio.itch.io/dhitw",
+            direct: "https://cemong-studio.itch.io/dhitw",
             legal: "https://pdki-indonesia.dgip.go.id/detail/EC002022104276?type=copyright&keyword=",
         },
         {
@@ -104,7 +103,7 @@ export default function PortGame() {
             green: "11 Nov 2022",
             red: "13 Nov 2022",
             role: "Game Programming",
-            href: "https://cemong-studio.itch.io/asterism-completion",
+            direct: "https://cemong-studio.itch.io/asterism-completion",
             legal: "#",
         },
         {
@@ -117,7 +116,7 @@ export default function PortGame() {
             green: "11 Nov 2022",
             red: "11 Dec 2022",
             role: "Game Programming",
-            href: "https://cemong-studio.itch.io/aratnasun",
+            direct: "https://cemong-studio.itch.io/aratnasun",
             legal: "#",
         },
     ];
@@ -158,14 +157,18 @@ export default function PortGame() {
                                     </div>
                                     <div className="flex grid-cols-2 justify-left gap-4">
                                         <div className="flex items-center justify-between border-t border-gray-50 pt-4">
-                                            <a className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200" target="_blank" href={item.href} rel="noreferrer">
-                                                See Details
-                                            </a>
+                                            <p className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200">
+                                                <a href={item.direct} target="_blank" rel="noreferrer">
+                                                    See Details
+                                                </a>
+                                            </p>
                                         </div>
                                         <div className="flex items-center justify-between border-t border-gray-50 pt-4">
-                                            <a className="py-2 px-3 bg-red-500 hover:bg-red-600 rounded text-xs text-white transition duration-200" target="_blank" href={item.legal} rel="noreferrer">
-                                                Legal Details
-                                            </a>
+                                            <p className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200">
+                                                <a href={item.legal} target="_blank" rel="noreferrer">
+                                                    Legal Details
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
