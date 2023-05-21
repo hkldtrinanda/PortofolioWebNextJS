@@ -164,7 +164,7 @@ export default function PortGame() {
                                             </p>
                                         </div>
                                         <div className="flex items-center justify-between border-t border-gray-50 pt-4">
-                                            <p className="py-2 px-3 bg-indigo-500 hover:bg-indigo-600 rounded text-xs text-white transition duration-200">
+                                            <p className="py-2 px-3 bg-red-500 hover:bg-red-600 rounded text-xs text-white transition duration-200">
                                                 <a href={item.legal} target="_blank" rel="noreferrer">
                                                     Legal Details
                                                 </a>
